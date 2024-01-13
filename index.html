@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Ispisiri - projet de l'association Faltazi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> 
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>
+    .progress-bar {
+      padding-top: 0px !important;
+    }
+
+    img {
+      cursor: pointer;
+    }
+
+    .w3-padding-top-32 {
+      padding-top: 32px;
+    }
+
+    .w3-2021-inkwell {
+      color: #fff !important;
+      background-color: #363945 !important
+    }
+
+    .w3-button:hover {
+      color: #fff !important;
+      background-color: #363945 !important
+    }
+
+    .w3-2021-illuminating {
+      color: #000 !important;
+      background-color: #F5DF4D !important
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-amber w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="showHideMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#epicerie" class="w3-bar-item w3-button w3-padding-large">ÉPICERIE</a>
+      <a href="#lieu" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OÙ ?</a>
+      <a href="#ouverture" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HORAIRES</a>
+      <a href="#adherer" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ADHÉRER</a>
+      <a href="#presse" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRESSE</a>
+      <a href="#ressources" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESSOURCES</a>
+      <a href="#taches" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TÂCHES</a>
+      <a href="#faq" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAQ</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-amber w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#lieu" class="w3-bar-item w3-button w3-padding-large" onclick="showHideMenu()">OÙ ?</a>
+    <a href="#ouverture" class="w3-bar-item w3-button w3-padding-large" onclick="showHideMenu()">HORAIRES</a>
+    <a href="#adherer" class="w3-bar-item w3-button w3-padding-large" onclick="showHideMenu()">ADHÉRER</a>
+    <a href="#presse" class="w3-bar-item w3-button w3-padding-large" onclick="showHideMenu()">PRESSE</a>
+    <a href="#ressources" class="w3-bar-item w3-button w3-padding-large" onclick="showHideMenu()">RESSOURCES</a>
+    <a href="#taches" class="w3-bar-item w3-button w3-padding-large" onclick="showHideMenu()">TÂCHES</a>
+    <a href="#faq" class="w3-bar-item w3-button w3-padding-large" onclick="showHideMenu()">FAQ</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content">
+
+    <div class="w3-container" id="epicerie">
+      <h3 class="w3-border-light-grey w3-padding-top-32">&nbsp;</h3>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container w3-content w3-center w3-margin-top" id="epicerie">
+      <h2 class="w3-wide">ÉPICERIE AUTO-GÉRÉE</h2>
+      <p class="w3-opacity"><i>Créer, essayer, ensemble</i></p>
+      <p class="w3-justify">L'ispisiri c'est une épicerie qui est gérée par ses adhérents. Nous réalisons les
+        commandes, les mises en rayons, les permanences et toutes les tâches permettant à ce projet de fonctionner au
+        quotidien. L'implication de ses adhérents a permis la création d'un lieu collectif où la liberté, la confiance,
+        le partage et le sens des responsabilités se cotoient.</p>
+      <p class="w3-justify">Concretement, ce sont des produits de qualité, des prix très intéressants, dans une démarche
+        éco-responsable (souvent bio mais pas que, vrac, local), dans le but d'expérimenter en collectif !</p>
+    </div>
+
+    <!-- Section -->
+    <div class="w3-container w3-margin-top w3-padding-top-32">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Quels produits ?</h3>
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-deep-orange w3-padding">Conserves</div>
+          <img src="images/epicerie-conserve.jpg" alt="Des produits de qualité du quotidien à des prix très intérresants." style="width:100%" onclick="showImage(this)">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-deep-orange w3-padding">Vrac</div>
+          <img src="images/epicerie-silos.jpg" alt="Des produits en vrac pour limiter les emballages." style="width:100%" onclick="showImage(this)">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-deep-orange w3-padding">Hygiène</div>
+          <img src="images/produits-hygiene.jpg" alt="Toutes sortes de produits, dont des produit d'hygiène et de nettoyage efficaces et écologiques." style="width:100%" onclick="showImage(this)">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-deep-orange w3-padding">Local</div>
+          <img src="images/produits-locaux.jpg" alt="Des produits locaux, de la farine, des tisanes, de la bière ..." style="width:100%" onclick="showImage(this)">
+        </div>
+      </div>
+    </div>
+
+    <!-- Section -->
+    <div class="w3-container w3-margin-top w3-padding-top-32" id="lieu">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">À Lannion</h3>
+    </div>
+    <div class="w3-container w3-content w3-center w3-margin-top">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.59459744649!2d-3.4568219999999994!3d48.732337599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48122b4a8822536f%3A0x3888d800220e0b94!2sIspisiri%2C%20Epicerie%20associative!5e0!3m2!1sfr!2sfr!4v1704725737273!5m2!1sfr!2sfr" width="600" height="450" style="border:0; max-width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Section -->
+    <div class="w3-container w3-margin-top w3-padding-top-32" id="ouverture">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Horaires</h3>
+    </div>
+    <div class="w3-container w3-content w3-center w3-margin-top">
+      <iframe style="width: 100%; height: 600px; max-height: 50%; border: none;" src="https://framagenda.org/apps/calendar/embed/8AqyCpBGKQgfLqKg"></iframe>
+    </div>
+
+    <!-- Section -->
+    <div class="w3-container w3-margin-top w3-padding-top-32" id="adherer">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Adhérer</h3>
+    </div>
+    <div class="w3-container w3-content w3-center w3-margin-top">
+      <div class="w3-light-grey">
+        <div class="w3-container progress-bar w3-2021-illuminating w3-center" style="width:75%">90 adhérents actuels, soit 72% de
+          l'objectif</div>
+      </div>
+      <p>Pour permettre de payer le loyer de l'épicerie et que ce projet soit pérenne dans le temps, il est nécéssaire
+        d'avoir entre 100 et 150 adhérents.</p>
+
+      <h4 class="w3-wide">Quelles sont les étapes ?</h4>
+      <ul class="w3-ul">
+        <li>Passez à l'ispisiri pour découvrir le lieu lors d'une permanence des adhérents<br/><i>(cf calendrier)</i></li>
+        <li>Laissez vos coordonnées pour obtenir les informations d'adhésion<br/><i>(présentation de l'ispisiri, adhésion faltazi, compte achat)</i></li>
+        <li>Lisez en conscience la charte pour vérifier que vous êtes prêt à vous engager</li>
+        <li>Versez 40€ d'adhésion, puis l'argent sur votre compte achat pour payer vos propres produits<br/><i>(tout ça par virement bancaire)</i></li>
+        <li>Participez à la vie de l'association en réalisant des tâches bénévoles de temps en temps</li>
+      </ul>
+    </div>
+
+    <!-- Section -->
+    <div class="w3-container w3-margin-top w3-padding-top-32" id="presse">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">On parle de nous dans les médias</h3>
+    </div>
+    <div class="w3-container w3-content w3-center w3-margin-top">
+      <p class="w3-justify">07 mai 2023 - Le Télégramme - 
+        <a href="https://www.letelegramme.fr/cotes-d-armor/lannion-22300/a-lannion-lispisiri-epicerie-autogeree-fete-ses-deux-ans-4415643.php" target="_blank">À Lannion, L’Ispisiri, épicerie autogérée, fête ses deux ans</a>
+      </p>
+      <p class="w3-justify">25 juin 2022 - Trégor - 
+        <a href="https://www.ouest-france.fr/bretagne/lannion-22300/une-epicerie-collective-ouvre-le-1-sup-er-sup-mai-au-centre-ville-de-lannion-26708c72-a7e9-11eb-b152-ab3b087a49aa" target="_blank">L'épicerie Ispisiri vend à prix coûtant</a>
+      </p>
+      <p class="w3-justify">04 février 2022 - L'Eutopia - 
+        <a href="https://eutopia2020.wordpress.com/2022/02/04/lispisiri-epicerie-autogeree/" target="_blank">L’Ispisiri : épicerie autogérée</a>
+      </p>
+      <p class="w3-justify">30 avril mai 2021 - Le Télégramme -
+        <a href="https://www.letelegramme.fr/cotes-d-armor/lannion-22300/a-lannion-une-epicerie-solidaire-ouvre-ses-portes-ce-samedi-1er-mai-3785796.php" target="_blank">À Lannion, une épicerie solidaire ouvre ses portes ce samedi 1er mai</a>
+      </p>
+      <p class="w3-justify">09 avril 2021 - Ouest France - 
+        <a href="https://www.ouest-france.fr/bretagne/lannion-22300/une-epicerie-collective-ouvre-le-1-sup-er-sup-mai-au-centre-ville-de-lannion-26708c72-a7e9-11eb-b152-ab3b087a49aa" target="_blank">Ispisiri, une épicerie collective, ouvre ses portes samedi 1er mai, dans le centre-ville de Lannion</a>
+      </p>
+      <p class="w3-justify">
+        17 juin 2021 - Océance Radio - 
+        <a href="https://oceane.ouest-france.fr/l-ispisiri-une-epicerie-auto-geree-a-lannion-22" target="_blank">L'ispisiri - une épicerie auto-gérée à Lannion</a>
+      </p>
+    </div>
+
+    <!-- Section -->
+    <div class="w3-container w3-margin-top w3-padding-top-32" id="ressources">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Quelques ressources</h3>
+    </div>
+    <div class="w3-container w3-content w3-center w3-margin-top">
+      <p class="w3-justify"><a href="./ressources/charte-ispisiri.pdf" target="_blank">La charte de l'ispisiri</a></p>
+      <p class="w3-justify"><a href="./ressources/presentation-ispisiri.pdf" target="_blank">Présentation du
+          fonctionnement de l'epicerie auto-gérée</a></p>
+      <p class="w3-justify"><a href="./ressources/statuts-faltazi.pdf" target="_blank">Statuts de l'association
+          faltazi</a></p>
+    </div>
+
+    <!-- Section -->
+    <div class="w3-container w3-margin-top w3-padding-top-32" id="taches">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Tâches courantes : commandes et permanences</h3>
+    </div>
+    <div class="w3-container w3-content w3-center w3-margin-top" id="taches">
+      <p class="w3-justify"><a href="https://framagenda.org/login" target="_blank">Agenda partagé</a></p>
+      <p class="w3-justify"><a href="https://cryptpad.fr/" target="_blank">Espace commun de documentation</a></p>
+      <p class="w3-justify">Fournisseurs :
+        <a href="https://www.agidra.com" target="_blank">AGIDRA</a>,
+        <a href="https://biomene.fr" target="_blank">BIOMENE</a>,
+        <a href="https://mardi.lespaniersdubocage.com/Moulin-de-Kerjean" target="_blank">MOULIN DE KERJEAN</a>,
+        <a href="https://graindesail.com/fr/" target="_blank">GRAIN DE SAIL</a>
+      </p>
+    </div>
+
+    <!-- Section -->
+    <div class="w3-container w3-margin-top w3-padding-top-32" id="faq">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">FAQ</h3>
+    </div>
+    <div class="w3-container w3-content w3-center w3-margin-top" id="faq">
+      <p class="w3-justify" onclick="document.getElementById('idFAQ01').style.display='block'" style="cursor: pointer;">Qui contacter pour avoir des informations ?</p>
+      <p class="w3-justify" onclick="document.getElementById('idFAQ05').style.display='block'" style="cursor: pointer;">Qu'est ce que je peux faire pour aider ?</p>
+      <p class="w3-justify" onclick="document.getElementById('idFAQ02').style.display='block'" style="cursor: pointer;">Comment remplir le calendrier des permanences ?</p>
+      <p class="w3-justify" onclick="document.getElementById('idFAQ03').style.display='block'" style="cursor: pointer;">Comment faire une commande ?</p>
+      <p class="w3-justify" onclick="document.getElementById('idFAQ04').style.display='block'" style="cursor: pointer;">Comment faire un fichier de prix d'étiquetage rapidement ?</p>
+    </div>
+
+    <!-- End Page Content -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <p class="w3-medium">L'ispisiri est un projet collectif de l'association d'éducation populaire Faltazi.</p>
+    <p class="w3-medium">Contactez-nous à l'adresse mail <a href="mailto:ispisiri@tutanota.com" target="_blank"><b>ispisiri@tutanota.com</b></a></p>
+    <p class="w3-medium"><a href="https://m.facebook.com/people/Ispisiri/100075996294983/?locale=fr_FR" target="_blank">Abonnez-vous sur la page Facebook</a></p>
+  </footer>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-2021-inkwell" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-2021-inkwell w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- The Modals for FAQ -->
+  <div id="idFAQ01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('idFAQ01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        
+        <h2>Qui contacter pour avoir des informations ?</h2>
+        <p>Pas toujours évident de trouver les informations dans les structures auto-gérée, car les choses bougent ! Nous vous proposons ici plusieurs moyens de trouver l'information dont vous avez besoin !</p>
+        <ul>
+          <li>Poser vos questions aux personnes présentes lors des <b>permanences</b></li>
+          <li>Le mail du projet, géré par plusieurs personne est <b>ispisiri@tutanota.com</b></li>
+          <li>Pour des informations générales sur les inscriptions, vous pouvez contacter <b>Chantal</b> au <a href="tel:0778642898">07 78 64 28 98</a></li>
+          <li>Une fois que vous aurez adhéré, vous disposerez aussi de <b>3 listes de diffusions</b> : informations essentielles, vie quotidienne et petites annonces</li>
+        </ul>
+                
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="idFAQ02" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('idFAQ02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h2>Comment remplir le calendrier des permanences ?</h2>
+        <p>Le calendrier en ligne présent sur cette page est un composant issu du site framagenda.</p>
+        <ul>
+          <li>Créer son compte sur <a href="https://framagenda.org/login" target="_blank">framagenda</a></li>
+          <li>Puis demander accès à l'agenda sur la framaliste d'infos générales en donnant l'adresse mail de votre compte</li>
+          <li>Une fois la confirmation reçue, connectez-vous à framagenda et rendez-vous sur la page  <a href="https://framagenda.org/apps/calendar/dayGridMonth/now" target="_blank">Agenda</a>, un nouveau calendrier nommé ISPISIRI est disponible</li>
+          <li>Cliquer dessus la case de la date choisie pour ajouter une entrée et modifier les informations (ou sur une entrée existante, cliquer sur dupliquer)</li>
+          <li>Nous vous conseillons de commencer le titre par "Permanence" et de rajouter dans la description les noms complet des adhérents</li>
+          <li>Une fois enregistrée, l'entrée apparait directement sur le site !</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="idFAQ03" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('idFAQ03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h2>Comment faire une commande ?</h2>
+        <p>Tout adhérent peut faire une commande de produit de son choix. Chacun s'organise comme il veut, mais mieux vaut communiquer un peu pour avoir de l'aide.</p>
+        <ul>
+          <li>Vérifier le montant que l'on peut dépenser (contacter Morgane)</li>
+          <li>Informer les autres adhérent de la commande en cours via le framaliste lispisiri-infodutilitegenerale@framalistes.org</li>
+          <li>Remplir le bon de commande (en groupe si possible) en vérifiant les stocks</li>
+          <li>Faire relire par une autre personne pour éviter les erreurs</li>
+          <li>Envoyer le bon de commande et demander la date de livraison</li>
+          <li>Demander le paiement (contacter Sandrine)</li>
+          <li>Communiquer sur la date de livraison pour que la commande puisse être receptionnée</li>
+          <li>S'organiser pour faire les prix, étiqueter, mettre en rayon les produits et débarasser les emballages</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="idFAQ04" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('idFAQ04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h2>Comment faire un fichier de prix d'étiquetage rapidement ?</h2>
+        <p>Vous êtes libre de le faire à l'ancienne, à l'instinct, au hasard ou autrement. Mais voilà une façon efficace de le faire sur Agidra.</p>
+
+        <h4>1) Récupérer un fichier de prix</h4>
+        <ul>
+          <li>Dans le panier du site Agidra, cliquer sur "Exporter sous excel"</li>
+          <li>Ouvrir le document avec un tableur, par exemple libre office</li>
+          <li>Dans le cas d'agidra : il faut bien l'ouvrir avec la langue en anglais pour qu'il comprenne le . et s'assurer qu'il prend bien en compte le séparateur de colonne (par défaut)</li>
+          <li>Enregistrer le fichier en format ODS</li>
+        </ul>
+        <p>Ce n'est pas vraiment ça l'important, mais une fois votre tableur ouvert avec vos produits, vous allez pouvoir faire le calcul pour un produit et le dupliquer  pour tous les produit (simple glisser déposer), passons à l'étape suivante.</p>
+
+        <h4>2) Faire la formule</h4>
+        <ul>
+          <li><b>Calcul de la TVA avec prix unitaire</b> : Prix Unitaire x (1 + TVA), exemple : soupe = 1.64 x ( 1 + 5,5 ) = 1,69855</li>
+          <li>Calcul de la TVA sans prix unitaire : (Prix lot x (1 + TVA)) / nombre d'articles, exemple : soupes = (16.4 x ( 1 + 5,5 )) / 10 = 1,69855</li>
+          <li>Formule arrondi supérieur à 2 chiffre : =ARRONDI.SUP(CELLULE; 2)</li>
+          <li><b>Formule arrondi au 0.05 supérieur</b> : =PLAFOND(CELLULE; 0,05)</li>
+        </ul>
+        <p>Voici un <a href="./ressources/Votre_Panier_Agidra.ods" target="_blank">fichier d'exemple</a>, cela permet de copier coller les formules et les adapter si besoin.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="idFAQ05" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('idFAQ05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <h2>Qu'est ce que je peux faire pour aider ?</h2>
+        <p><b>Pour faire fonctionner l'ispisiri et le lieu d'éducation populaire, il y a beaucoup de choses possibles à faire. Tout d'abord, suivez vos envies car cette activité bénévole doit rester un plaisir !</b></p>
+        <p>Depuis début 2024 le tâchebleau (un tableau des tâches artistique) est disponible dans le local. Il sert à recenser toutes les activités utiles à la vie de l'épicerie et identifier comment chaque adhérent·e se mobilise. Venez voir les initiatives et rejoignez un groupe.</p>
+        
+        <h4>Liste non exhaustive des tâches :</h4>
+        <ul>
+          <li><b>Permanences</b> : participer aux permanences, décorer le local, mettre à niveau les silos, nettoyer le local, etc.</li>
+          <li><b>Commandes</b> : plannifier une commande de groupe, préparer les commandes, réaliser la commande collectivement, suivre la commande, communiquer sur la commande, etc.</li>
+          <li><b>Récéption des commandes</b> : venir récéptionner les commandes, aller chercher une commande, etiqueter, mettre en rayon, débarasser les cartons, etc.</li>
+          <li><b>Administratif</b> : gérer les adhésion, répondre aux courriers, mettre à jour les outils numériques, etc.</li>
+          <li><b>Comunication</b> : participer à des salon, en parler autour de vous, travailler sur les outils de communication, mettre à jour la vitrie internet, etc.</li>
+          <li><b>Créativité</b> : organiser des évènements, proposer des temps d'échanges, proposer de nouvelles idées, etc.</li>
+          <li><b>Rejoindre un groupe d'éducation populaire</b> : oenologie, dessin, couture, etc.</li>
+        </ul>
+
+        <h4>Rappel de l'objet de l'association d'éducation populaire Faltazi (création de l'ispisiri) :</h4>
+        <p>L'association Faltazi vise à encourager et pérenniser <b>L'action collective et l’autogestion d'espaces</b> et d'initiatives à but non lucratif, en donnant une forme d'existence autonome au collectif citoyen constitué par ses adhérent.e.s. Elle leur donne, d’une part le pouvoir de <b>décider ensemble</b> des usages de ces espaces, et d’autre part la <b>responsabilité</b> d’en prendre soin, et ce dans le but de :</p>
+        <ul>
+          <li>Contribuer à l'engagement et à la prise de responsabilité des citoyens dans la société, de contribuer à la cohésion sociale et à la démocratie</li>
+          <li>Soutenir l’accès à des ressources mutualisées et l’expérimentation d’actions sociales et culturelles concrètes, créatrices de liens et favorables au développement local</li>
+          <li>Favoriser la coopération, l’autonomie et la co-construction de savoirs et de savoirs faire dans tous les domaines</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function showHideMenu() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // Modal Image Gallery
+    function showImage(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+
+</body>
+
+</html>
